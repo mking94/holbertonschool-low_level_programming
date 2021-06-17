@@ -1,2 +1,2 @@
 #!/bin/bash
-./$(gcc $CFILE -o tst) > c
+gcc $CFILE -o tst) | ./tst > c
