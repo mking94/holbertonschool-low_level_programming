@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o c0 | ./c0 > c
+./$CFILE > c
