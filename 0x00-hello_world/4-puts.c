@@ -1,4 +1,5 @@
-#include <stdio.h> /*first betty program*/
+#include <stdio.h> 
+/*first betty program*/
 int main (){ 
 puts("\"Programming is like building a multilingual puzzle"); 
 return 0;
