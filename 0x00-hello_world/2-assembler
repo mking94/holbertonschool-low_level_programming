@@ -1,0 +1,2 @@
+#!/bin/bash
+gacc -S $CFILE
