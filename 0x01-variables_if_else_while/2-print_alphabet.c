@@ -8,12 +8,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char i;
+char i; 
 /* for loop */
-for (i='a';i<='z';i++)
+for (i = 'a'; i <= 'z'; i++)
 {
-putchar (i) ;
+putchar (i) ; 
 }
-putchar ('\n') ;
-return (0) ;
+putchar ('\n') ; 
+return (0) ; 
 }
