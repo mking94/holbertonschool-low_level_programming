@@ -17,7 +17,7 @@ printf("The Sting is %d", n);
 }
 else if ((n%10) > 5)
 {
-printf("Last digit of %d is %d and is great than 5 and not 0", n, n%10);
+printf("Last digit of %d is %d and is great than 5", n, n%10);
 }
 else if ((n%10) < 6)
 {
