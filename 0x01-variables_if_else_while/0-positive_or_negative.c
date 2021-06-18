@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Print last digit
+ * main - Print positive or negative
  *
  * Return: Always 0 (Success)
  */
@@ -15,11 +15,11 @@ if (n == 0)
 {
 printf("%d is zero\n", n);
 }
-else if (n < 0)	
+else if (n < 0)
 {
 printf("%d is negative\n", n);
-}	
-else 
+}
+else
 {
 printf("%d is positive\n", n);
 }
