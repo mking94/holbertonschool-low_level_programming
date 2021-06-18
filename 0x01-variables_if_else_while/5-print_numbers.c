@@ -1,13 +1,16 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Print Numbers
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i=0;
-
-for(int i=0;i<10;i++){
-printf("%d",i);
+int j;
+for (j = 48 ; j < 58 ; j++)
+{
+putchar ((char)j);
 }
+putchar ('\n');
 return (0);
 }
