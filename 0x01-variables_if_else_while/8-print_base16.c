@@ -1,14 +1,17 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Print Hex
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char hex[16]="0123456789abcdef";
-
-for(int i=0;i<16;i++){
-putchar(hex[i]);
+char hex[16] = "0123456789abcdef";
+int j;
+for (j = 0 ; j < 16 ; j++)
+{
+putchar (hex[j]);
 }
-/* your code goes there */
+putchar ('\n');
 return (0);
 }
