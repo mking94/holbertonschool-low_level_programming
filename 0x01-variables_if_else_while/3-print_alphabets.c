@@ -7,9 +7,9 @@
 int main(void)
 {
 int x=32;
-for (i =0 ; i <2 ; i++)
+for (int i =0 ; i <2 ; i++)
 {
-for (j = 0 ; j < 91 ; j++)
+for (int j = 65 ; j < 91 ; j++)
 {
 	putchar ((char)j+x);
 }
