@@ -4,10 +4,10 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-  int i;
+  char i;
 /* for loop */
-for(i=97;i<123;i++){
-putchar((char)i);
+for(i='a';i!='z';i++){
+putchar(i);
 }
 return (0);
 }
