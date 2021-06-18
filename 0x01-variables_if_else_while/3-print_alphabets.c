@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main
+ * main - Print Alpha
  *
  * Return: Always 0 (Success)
  */
