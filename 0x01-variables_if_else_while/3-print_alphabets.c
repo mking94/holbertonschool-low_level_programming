@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-int x=32;
+int x=0;
 for (int i =0 ; i <2 ; i++)
 {
-for (int j = 65 ; j < 91 ; j++)
+for (int j = 97 ; j < 123 ; j++)
 {
-	putchar ((char)j+x);
+	putchar ((char)j-x);
 }
-  x=0
+  x=32;
 }
 	putchar ('\n');
 return (0);
