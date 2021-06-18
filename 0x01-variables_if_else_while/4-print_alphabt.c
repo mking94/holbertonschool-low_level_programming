@@ -11,10 +11,10 @@ for (j = 97 ; j < 123 ; j++)
 {
 if (j == 101 || j == 113)
 {
-  j++;
+j++;
 }
-  putchar ((char)j);
+putchar ((char)j);
 }
-  putchar ('\n');
-  return (0);
+putchar ('\n');
+return (0);
 }
