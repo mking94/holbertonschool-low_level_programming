@@ -1,17 +1,19 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Print Alpha
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i=0;
-
-for(int i=97;i<123;i++){
-if(i==101 || i==113)
+int j;
+for (j = 97 ; j < 123 ; j++)
 {
-i++;
+if (j == 101 || j == 113)
+{
+  putchar ((char)j);
 }
-putchar((char)i);
 }
-return (0);
+  putchar ('\n');
+  return (0);
 }
