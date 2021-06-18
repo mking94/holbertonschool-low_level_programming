@@ -9,6 +9,5 @@ int i;
 for(i=97;i<123;i++){
 putchar((char)i);
 }
-/* your code goes there */
 return (0);
 }
