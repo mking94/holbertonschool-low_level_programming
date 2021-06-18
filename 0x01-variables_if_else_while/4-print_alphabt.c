@@ -11,8 +11,9 @@ for (j = 97 ; j < 123 ; j++)
 {
 if (j == 101 || j == 113)
 {
-  putchar ((char)j);
+  j++;
 }
+  putchar ((char)j);
 }
   putchar ('\n');
   return (0);
