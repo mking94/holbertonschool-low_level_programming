@@ -12,6 +12,5 @@ putchar((char)(j+x));
 }
 x=0;
 }
-/* your code goes there */
 return (0);
 }
