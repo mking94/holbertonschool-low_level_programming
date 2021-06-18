@@ -1,16 +1,20 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int x=32;
-
-for(int i=0;i<2){
-for(j=65;j<91;j++){
-putchar((char)(j+x));
+for (i =0 ; i <2 ; i++)
+{
+for (j = 0 ; j < 91 ; j++)
+{
+	putchar (j);
 }
-x=0;
+  x=0
 }
+	putchar ('\n');
 return (0);
 }
