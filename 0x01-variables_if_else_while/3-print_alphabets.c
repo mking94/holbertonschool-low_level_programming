@@ -16,5 +16,5 @@ for (j = 97 ; j < 123 ; j++)
 	x = 32;
 }
 	putchar ('\n');
-return (0);
+	return (0);
 }
