@@ -1,18 +1,21 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Print comb
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i=0;
-
-for(i=48;i<58;i++){
-putchar((char)i);
-if(i!=57){
-putchar(',');
-putchar(' ');
+int j;
+for (j = 48 ; j < 58 ; j++)
+{
+putchar ((char)j);
+if (j != 57)
+{
+putchar (',');
+putchar (' ');
 }
 }
-/* your code goes there */
+putchar ('\n');
 return (0);
 }
