@@ -13,7 +13,7 @@ for (j = 97 ; j < 123 ; j++)
 {
 	putchar ((char)j - x);
 }
- 	x = 32;
+	x = 32;
 }
 	putchar ('\n');
 return (0);
