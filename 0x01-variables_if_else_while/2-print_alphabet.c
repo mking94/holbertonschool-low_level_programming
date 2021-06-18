@@ -1,7 +1,3 @@
-/*
- * File: 2-print_alhabet
- * Auth: Maher Ben dada
- */
 #include <stdio.h>
 /**
  * main - 
