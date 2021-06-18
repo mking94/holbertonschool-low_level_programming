@@ -13,6 +13,5 @@ i++;
 }
 putchar((char)i);
 }
-/* your code goes there */
 return (0);
 }
