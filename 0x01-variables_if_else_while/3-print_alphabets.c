@@ -11,7 +11,7 @@ for (i =0 ; i <2 ; i++)
 {
 for (j = 0 ; j < 91 ; j++)
 {
-	putchar (j);
+	putchar ((char)j+x);
 }
   x=0
 }
