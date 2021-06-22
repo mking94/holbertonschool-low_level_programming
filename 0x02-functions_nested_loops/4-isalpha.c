@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _islower - Checks if a character is letter.
+ * _isalpha - Checks if a character is letter.
  * @c: The character to be checked.
  *
  * Return: 1 if character is letter. 0 otherwise.
