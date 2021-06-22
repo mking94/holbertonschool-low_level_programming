@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_sign - Checks if the sign of integer.
- * @c: The integer to be checked.
+ * @n: The integer to be checked.
  *
  * Return: 1 if character is great of zero. 0 otherwise.
  */
