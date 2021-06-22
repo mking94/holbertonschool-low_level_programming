@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <holberton.h>
 /**
  * main - Task 0
  *
