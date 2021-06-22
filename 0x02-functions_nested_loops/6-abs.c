@@ -4,7 +4,7 @@
  * @n: The integer .
  *
  * Return the value absolute of n.
- * /
+ */
 int _abs(int n)
 {
 if (n >=0)
