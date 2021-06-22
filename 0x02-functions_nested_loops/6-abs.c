@@ -1,5 +1,5 @@
  #include "holberton.h"
-/**
+/*
  * _abs - print the value absolute.
  * @n: The integer .
  *
