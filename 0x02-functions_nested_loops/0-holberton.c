@@ -8,10 +8,10 @@
 int main(void)
 {
 char ch[9]="Holberton";
-for(int i=0;i<9;i++)
+for (int i=0;i<9;i++)
 {
-_putchar(ch[i]);
+_putchar (ch[i]);
 }
-_putchar('\n');
+_putchar ('\n');
 return (0);
 }
