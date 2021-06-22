@@ -3,7 +3,7 @@
  * _add - sum two integer.
  *
  */
-int add (int x, int y)
+int add(int x, int y)
 {
 return (x + y);
 }
