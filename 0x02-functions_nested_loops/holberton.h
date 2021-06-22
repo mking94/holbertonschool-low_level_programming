@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef HOLBERTON.H
+#define HOLBERTON.H
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
