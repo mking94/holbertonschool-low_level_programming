@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * main - Task 0
+ * main - Task 1
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-print_alphabet(void);
+print_alphabet();
 return (0);
 }
