@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <holberton.h>
 /**
  * main - Task 0
  *
@@ -9,8 +10,8 @@ int main(void)
 char ch[9]="Holberton";
 for(int i=0;i<9;i++)
 {
-putchar(ch[i]);
+_putchar(ch[i]);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
