@@ -3,7 +3,7 @@
  * _abs - print the value absolute.
  * @n: The integer .
  *
- * Return the value absolute of n.
+ * Return: the value absolute of integer.
  */
 int _abs(int n)
 {
