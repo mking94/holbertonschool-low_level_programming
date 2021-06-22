@@ -2,6 +2,7 @@
 /**
  * main - Task 1
  *
+ * print_alphabet
  */
 void print_alphabet(void)
 {
