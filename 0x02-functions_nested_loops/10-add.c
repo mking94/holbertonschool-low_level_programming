@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- * _add - sum two integer.
+ * add - sum two integer.
+ * @x - the first integer.
+ * @y - the second integer.
  *
  */
 int add(int x, int y)
