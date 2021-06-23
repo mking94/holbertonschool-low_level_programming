@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main (void)
+int main(void)
 {
 int i, k = 0;
 for (i = 1; i < 1024; i++)
