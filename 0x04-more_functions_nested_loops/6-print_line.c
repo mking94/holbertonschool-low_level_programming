@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_line - draws a straight line in the terminal, followed by a new line.
- * @n: the line length.
- */
+* print_line - draws a straight line in the terminal.
+* @n: the line length.
+*/
 void print_line(int n)
 {
 if (n <= 0)
