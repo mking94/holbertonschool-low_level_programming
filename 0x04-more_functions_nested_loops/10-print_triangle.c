@@ -9,20 +9,24 @@
 
 void print_triangle(int size)
 {
+int size =10;
 int i, j;
-
-if (size <= 0)
-_putchar('\n');
-for (a = 1; a <= size; a++)
+if (!(size <= 0))
 {
-for (b = 1; b <= size; b++)
+for (i = 1; i <= size; i++)
 {
-if (b <= (size - a))
-_putchar(' ');
+for (j = 1; j <= size; j++)
+{
+if ((j + i) <= size)
+putchar(' ');
 else
-_putchar('#');
+putchar('#');
 }
-_putchar('\n');
+putchar('\n');
 }
-
+}
+else
+{
+putchar('\n');
+}
 }
