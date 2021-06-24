@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * print_line - draws a straight line in the terminal, followed by a new line.
+ * @n: the line length.
  */
 void print_line(int n)
 {
