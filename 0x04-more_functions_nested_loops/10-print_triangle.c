@@ -1,12 +1,9 @@
 #include "holberton.h"
-
 /**
-* print_diagonal - draws a triangle on the terminal, followed by a new line.
+* print_triangle - print a triangle conformed by #, followed by a new line.
 * @size: the size of triangle line;
-* 
 * Return: void.
 */
-
 void print_triangle(int size)
 {
 int size =10;
