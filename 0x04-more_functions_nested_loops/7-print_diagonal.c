@@ -12,11 +12,11 @@ for (k = 0; k < n; k++)
 {
 for (j = 0; j < k; j++)
 {
-_putchar (' ');
+_putchar(' ');
 }
-_putchar ((char)92);
-_putchar ('\n');
+_putchar((char)92);
+_putchar('\n');
 }
 }
-_putchar ('\n');
+_putchar('\n');
 }
