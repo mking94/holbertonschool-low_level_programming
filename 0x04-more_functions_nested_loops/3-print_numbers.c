@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * print_numbers - numbers, from 0 to 9, followed by a new line.
- *
- * Return: alwase 0.
- */
+* print_numbers - numbers, from 0 to 9, followed by a new line.
+*
+* Return: alwase 0.
+*/
 void print_numbers(void)
 {
 int i;
