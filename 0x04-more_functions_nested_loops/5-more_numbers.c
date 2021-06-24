@@ -15,8 +15,8 @@ _putchar (i+'0');
 }
 else
 {
-_putchar ('1');
-_putchar ((i % 10)+'0');
+_putchar ((i / 10) + '0');
+_putchar ((i % 10) + '0');
 }
 }
 _putchar ('\n');
