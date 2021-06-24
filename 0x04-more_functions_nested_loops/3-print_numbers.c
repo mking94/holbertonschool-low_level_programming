@@ -7,9 +7,9 @@
 void print_numbers(void)
 {
 int i;
-for (i = 0; i < 10; i++)
+for (i = 0; i <= 9; i++)
 {
-_putchar((char)(48 + i));
+_putchar((char)48 + i);
 }
 _putchar('\n');
 }
