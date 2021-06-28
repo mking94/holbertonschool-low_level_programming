@@ -3,7 +3,7 @@
 
 /**
 * _puts - print string.
-* @s: the input.
+* @str: the input.
 * Return: length.
 */
 
