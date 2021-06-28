@@ -1,45 +1,23 @@
 #include "holberton.h"
 /**
- * _strlen - Swap the value of two integers
- * @s: Set of characters
+ * rev_string - reverses given string
  *
- * Return: Nothing
-*/
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (*(s + i) != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
- * rev_string - Reverse a string
- * @s: Set of characters
+ * @s: string to reverse
  *
- * Return: Nothing
-*/
-
+ * Return: always void
+ */
 void rev_string(char *s)
 {
-	int len = _strlen(s);
-	int i = len;
-	char s_rev[1000];
-	int j = 0;
-	int k;
+	char *end = s;
+	char store;
 
-	while (i > 0)
+	while (*end)
+		end++; /* set pos of end pointer to point to last element */
+	end = end - 1; /* set end pos to end -1 b/c end is really '\0' */
+	while (s < end) /* stop once we get to last address */
 	{
-		i--;
-		s_rev[j] = *(s + i);
-		j++;
-	}
-
-	for (k = 0; k < len; k++)
-	{
-		*(s + k) = s_rev[k];
+		store = *s; /* set store ch to s[currentPos] */
+		*s++ = *end; /* set position of s = pos end, and increment s */
+		*end-- = store; /* set pos of end to stored char and increment */
 	}
 }
