@@ -13,7 +13,7 @@ int i = strlen(s) -1;
 char str[strlen(s)];
 while (i >= 0)
 {
-str[strlen(s) - i] = s[i];
+str[strlen(s) - (i+1)] = s[i];
 i--;
 }
 s = str;
