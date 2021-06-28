@@ -1,23 +1,43 @@
 #include "holberton.h"
+
 /**
- * rev_string - reverses given string
- *
- * @s: string to reverse
- *
- * Return: always void
- */
+* _strlen - returns the length of a string.
+* @s: a pointer to a char
+* Return: length of a string
+**/
+
+int _strlen(char *s)
+{
+	int length, i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	length = i;
+	return (length);
+}
+
+
+/**
+* rev_string - reverses a string
+* @s: a pointer to string
+* Return: nothing
+**/
+
 void rev_string(char *s)
 {
-	char *end = s;
-	char store;
+	char first, last;
+	int i = 0;
+	int size = _strlen(s) - 1;
 
-	while (*end)
-		end++; /* set pos of end pointer to point to last element */
-	end = end - 1; /* set end pos to end -1 b/c end is really '\0' */
-	while (s < end) /* stop once we get to last address */
+	while (i < size)
 	{
-		store = *s; /* set store ch to s[currentPos] */
-		*s++ = *end; /* set position of s = pos end, and increment s */
-		*end-- = store; /* set pos of end to stored char and increment */
+		first = s[i];
+		last = s[size];
+		s[i] = last;
+		s[size] = first;
+		i++;
+		size--;
 	}
 }
