@@ -15,11 +15,11 @@ while (s[len] != '\0')
 len++;
 }
 i=(len-1);
-char str[len];
+char tmp[len];
 while (i >= 0)
 {
-str[len-(i+1)] = s[i];
+tmp[len-(i+1)] = s[i];
 i--;
 }
-s = str;
+s = tmp;
 }
