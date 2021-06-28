@@ -14,7 +14,8 @@ while (s[len] != '\0')
 {
 len++;
 }
-int i = (len-1);
+int i ;
+i=(len-1);
 while (i >= 0)
 {
 str[len-(i+1)] = s[i];
