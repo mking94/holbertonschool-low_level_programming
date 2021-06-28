@@ -15,6 +15,7 @@ while (s[len] != '\0')
 len++;
 }
 i=(len-1);
+char str[len];
 while (i >= 0)
 {
 str[len-(i+1)] = s[i];
