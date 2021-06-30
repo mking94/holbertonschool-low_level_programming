@@ -11,7 +11,7 @@
 char *_strcat(char *dest, char *src)
 {
 int i=0, max;
-char tmp[strlen(str)+strlen(str1)];
+char tmp[strlen(dest)+strlen(scr)];
 while(dest[i]!='\0')
 {
 tmp[i]=dest[i];
@@ -23,7 +23,7 @@ while(src[i]!='\0')
 tmp[i+strlen(dest)]=src[i];
 i++;
 }
-tmp[strlen(str)+strlen(str1)]='\0';
+tmp[strlen(dest)+strlen(src)]='\0';
 dest=tmp;
 return dest;
 }
