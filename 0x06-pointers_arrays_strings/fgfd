@@ -1,0 +1,30 @@
+#include "holberton.h"
+#include <string.h>
+#include <ctype.h>
+/**
+* string_toupper: encodes a string .
+* @str: the input.
+* Return: str after encode.
+*/
+
+char *cap_string(char *str)
+{
+int i = 0;
+char tmp[strlen(str)];
+char separator[11] = ". ,!(){};?,\n,\"";
+while (str[i] != '\0')
+{
+if(strcspn(separator,str[i]) >= 0)
+{
+tmp[i] = str[i];
+tmp[i+1] = toupper(str[i+1]);
+}
+else
+{
+tmp[i] = str[i];
+}
+i++;
+}
+str = tmp;
+return (str);
+}
