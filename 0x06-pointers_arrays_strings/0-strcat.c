@@ -23,7 +23,7 @@ while(src[i]!='\0')
 tmp[i+strlen(dest)]=src[i];
 i++;
 }
-t[strlen(str)+strlen(str1)]='\0';
-dest=t;
+tmp[strlen(str)+strlen(str1)]='\0';
+dest=tmp;
 return dest;
 }
