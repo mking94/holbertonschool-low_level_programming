@@ -6,7 +6,7 @@
 * Return: str .
 */
 
-char *cap_string(char *x)
+char *cap_string(char *str)
 {
 int i;
 for (i = 0; x[i] != '\0'; i++)
