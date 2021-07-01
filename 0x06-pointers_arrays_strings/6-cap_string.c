@@ -2,11 +2,11 @@
 #include <stdio.h>
 /**
 * cap_string- capitalizes all words of a string.
-* @str: the input.
+* @x: the input.
 * Return: str .
 */
 
-char *cap_string(char *str)
+char *cap_string(char *x)
 {
 int i;
 for (i = 0; x[i] != '\0'; i++)
