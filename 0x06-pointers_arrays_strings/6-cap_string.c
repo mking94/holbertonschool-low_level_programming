@@ -2,9 +2,9 @@
 #include <string.h>
 #include <ctype.h>
 /**
-* string_toupper: encodes a string .
+* cap_string: change a string to upper .
 * @str: the input.
-* Return: str after encode.
+* Return: str .
 */
 
 char *cap_string(char *str)
