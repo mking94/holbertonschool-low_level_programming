@@ -1,14 +1,19 @@
 #include "holberton.h"
-#include <studio.h>
-
 /**
-* strcmp: compare two string .
-* @s1: the first input.
-* @s2: the second input.
-* Return: integer.
-*/
-
+ * _strcmp - Compare two strings
+ * @s1: String 1
+ * @s2: String 2
+ *
+ * Return: Difference of characters (0 - Equal)
+ */
 int _strcmp(char *s1, char *s2)
 {
-return (strcmp(char *s1, char *s2));
+	while (*s1 == *s2)
+	{
+		if (*s1 == '\0')
+			return (0);
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
 }
