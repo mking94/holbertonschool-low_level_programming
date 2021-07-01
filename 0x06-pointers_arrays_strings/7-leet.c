@@ -11,7 +11,7 @@ if(c >= 'a' && c<= 'z')
 c = (char)(int)c-32;
 else 
 c = c;
-retrun (c);
+return (c);
 }
 char *leet(char *str)
 {
