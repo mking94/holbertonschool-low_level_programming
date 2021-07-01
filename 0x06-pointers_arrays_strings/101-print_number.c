@@ -1,33 +1,28 @@
 #include "holberton.h"
 /**
- *print_number- display a number
- *@n: integer
+ * print_number - Print an integer
+ * @num: Number for printing
+ *
+ * Return: Nothing (void)
  */
-void print_number(int n)
+
+void print_number(int num)
 {
-if (n / 10 != 0)
-{
-print_number(n / 10);
-if (n > 0)
-{
-_putchar(n % 10 + '0');
-}
-else
-{
-_putchar(-n % 10 + '0');
-}
-}
-else if (n == 0)
-{
-_putchar('0');
-}
-else if ((n / 10 == 0) && (n % 10 != 0) && (n <= 0))
-{
-_putchar('-');
-_putchar(-n % 10 + '0');
-}
-else if ((n / 10 == 0) && (n % 10 != 0) && (n > 0))
-{
-_putchar((n % 10) + '0');
-}
+	unsigned int firstnum = 0;
+
+	if (num % 10 < 0)
+	{
+		_putchar('-');
+		firstnum = num * -1;
+	}
+	else
+		firstnum = num;
+
+	if (firstnum < 10)
+		_putchar((firstnum % 10) + '0');
+	else
+	{
+		print_number(firstnum / 10);
+		_putchar((firstnum % 10) + '0');
+	}
 }
