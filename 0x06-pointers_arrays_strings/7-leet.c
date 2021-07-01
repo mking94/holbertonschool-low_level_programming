@@ -6,34 +6,23 @@
 * Return: str after encode.
 */
 
-char upper(char c)
+char *leet(char *s)
 {
-if(c >= 'a' && c<= 'z')
-c = (char)(int)c-32;
-else 
-c = c;
-return (c);
+int i, x, y;
+char letters[] = "oOlLeEaAtT";
+char integers[] = "0011334477";
+for (i = 0; s[i] != '\0'; i++)
+{
+y = 0;
+for (x = 0; letters[x] != '\0'; x++)
+{
+if (s[i] == letters[x])
+{
+y = x;
+s[i] = integers[y];
 }
-char *leet(char *str)
-{
-int i = 0;
-char tmp[strlen(str)];
-while (str[i] != '\0')
-{
-if(upper(str[i]) == 'A')
-tmp[i] = '4';
-else if(upper(str[i]) == 'E')
-tmp[i] = '3';
-else if(upper(str[i]) == 'O')
-tmp[i] = '0';
-else if(upper(str[i]) == 'T')
-tmp[i] = '7';
-else if(upper(str[i]) == 'L')
-tmp[i] = '1';
-else
-tmp[i] = str[i];
-i++;
 }
-str = tmp;
-return (str);
+y++;
+}
+return (s);
 }
