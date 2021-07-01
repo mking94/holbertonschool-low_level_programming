@@ -1,28 +1,26 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 /**
 * cap_string- capitalizes all words of a string.
 * @str: the input.
 * Return: str .
 */
 
-char *cap_string(char *str)
+char *cap_string(char *x)
 {
-int i = 0;
-char tmpp[2];
-tmpp[1] = '\0';
-char separator[11] = ". ,!(){};?\n\"";
-while (str[i] != '\0')
+int i;
+for (i = 0; x[i] != '\0'; i++)
 {
-tmpp[0] = str[i-1];
-if (strcspn(separator, tmpp) < 11)
+if ((x[i] == ',') || (x[i] == ';') || (x[i] == '.') || (x[i] == '!')
+|| (x[i] == '?') || (x[i] == '"') || (x[i] == '(') || (x[i] == ')')
+|| (x[i] == '{') || (x[i] == '}') || (x[i] == ' ') || (x[i] == '\t')
+|| (x[i] == '\n'))
 {
-if(str[i] >= 'a' && str[i] <= 'z')
-str[i] = (char)((int)str[i]-32);
+if ((x[i + 1] >= 'a') && (x[i + 1] <= 'z'))
+x[i + 1] = x[i + 1] - 32;
 }
-i++;
+if ((x[0] >= 'a') && (x[0] <= 'z'))
+x[0] = x[0] - 32;
 }
-return (str);
+return (x);
 }
