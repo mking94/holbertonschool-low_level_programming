@@ -1,9 +1,8 @@
 #include "holberton.h"
-#include <string.h>
 /**
-* leet: encodes a string .
+* leet- encodes a string .
 * @s: the input.
-* Return: str after encode.
+* Return: s.
 */
 
 char *leet(char *s)
