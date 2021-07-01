@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 /**
@@ -10,27 +10,17 @@
 char *cap_string(char *str)
 {
 int i = 0;
-char tmp[strlen(str)];
 char tmpp[2];
 tmpp[1] = '\0';
-char separator[11] = ". ,!(){};?,\n,\"";
+char separator[11] = ". ,!(){};?\n\"";
 while (str[i] != '\0')
 {
-tmp[i] = str[i];
-i++;
-}
-tmp[i] = '\0';
-i = 0;
-while (tmp[i] != '\0')
-{
-tmpp[0] = tmp[i];
+tmpp[0] = str[i - 1];
 if (strcspn(separator, tmpp) < 11)
 {
-i++;
-tmp[i] = toupper(tmp[i]);
+str[i] = toupper(str[i]);
 }
 i++;
 }
-str = tmp;
 return (str);
 }
