@@ -4,9 +4,9 @@
 * reverse_array: reverses the content of an array of integers.
 * @a: the array input.
 * @n: the length of array.
+*
 * Return: void.
 */
-
 void reverse_array(int *a, int n)
 {
 	int i, temp;
