@@ -2,7 +2,7 @@
 #include <string.h>
 /**
 * leet: encodes a string .
-* @str: the input.
+* @s: the input.
 * Return: str after encode.
 */
 
