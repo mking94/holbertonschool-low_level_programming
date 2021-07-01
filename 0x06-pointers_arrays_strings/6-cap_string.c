@@ -11,17 +11,23 @@ char *cap_string(char *str)
 {
 int i = 0;
 char tmp[strlen(str)];
+char tmpp[2];
+tmpp[1]='\0';
 char separator[11] = ". ,!(){};?,\n,\"";
 while (str[i] != '\0')
 {
-if(strcspn(separator,str[i]) >= 0)
-{
 tmp[i] = str[i];
-tmp[i+1] = toupper(str[i+1]);
+i++;
 }
-else
+tmp[i]='\0';
+i = 0;
+while (tmp[i] != '\0')
 {
-tmp[i] = str[i];
+tmpp[0]=tmp[i];
+if(strcspn(separator,tmpp) < 11)
+{
+i++;
+tmp[i] = toupper(tmp[i]);
 }
 i++;
 }
