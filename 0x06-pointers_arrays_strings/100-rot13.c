@@ -1,7 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 
 /**
 * rot13- encodes a string .
@@ -21,7 +18,12 @@ return (c);
 char *rot13(char *str)
 {
 int i = 0;
-char tmp[strlen(str)];
+int length=0;
+while (str[length] != '\0')
+{
+length++;    
+}
+char tmp[length];
 while (str[i] != '\0')
 {
 tmp[i] = str[i];
