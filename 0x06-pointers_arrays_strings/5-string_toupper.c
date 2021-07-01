@@ -11,18 +11,11 @@ char *string_toupper(char *str)
 {
 int i = 0;
 
-char tmp[strlen(str)];
-
 while (str[i] != '\0')
 {
 if(str[i] >= 'a' && str[i] <= 'z')
-tmp[i] = (char)((int)str[i] - 32);
-else
-tmp[i]=str[i];
+str[i] = (char)((int)str[i] - 32);
 i++;
 }
-
-tmp[i+1]='\0';
-str=tmp;
 return (str);
 }
