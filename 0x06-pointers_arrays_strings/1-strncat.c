@@ -1,33 +1,26 @@
 #include "holberton.h"
-#include <string.h>
-
 /**
-* _strncat: contact two string.
-* @dest: first input.
-* @src: second input.
-* @n: number of character will be copyed.
-* Return: dest.
-*/
+ * _strncpy - Copy a string with n bytes from src
+ * @dest: The copy of the src
+ * @src: The string to be copied
+ * @n: Number of bytes to be append from src
+ *
+ * Return: dest (as a pointer).
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i = 0;
 
-char *_strcat(char *dest, char *src, int n)
-{
-int i = 0, max;
-char tmp[strlen(dest)+n];
-while (dest[i] != '\0')
-{
-tmp[i] = dest[i];
-i++;
-}
-i=0;
-if(strlen(src) != 0)
-{
-while (i != n)
-{
-tmp[i+strlen(dest)] = src[i];
-i++;
-}
-}
-tmp[strlen(dest)+strlen(src)] = '\0';
-dest=tmp;
-return dest;
+	while (*(src + i) != '\0' && i < n)
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	while (i < n)
+	{
+		*(dest + i) = '\0';
+		i++;
+	}
+
+	return (dest);
 }
