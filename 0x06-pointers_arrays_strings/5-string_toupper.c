@@ -1,10 +1,11 @@
 #include "holberton.h"
+
 /**
-* string_toupper - changes all lowercase letters of a large string to uppercase.
-*
-* @str: the input.
-* Return: str.
-*/
+  * string_toupper - Change string to uppercase.
+  * @str: The input string
+  *
+  * Return: str
+  */
 char *string_toupper(char *str)
 {
 int i = 0;
