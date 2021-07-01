@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <string.h>
 /**
 * leet: encodes a string .
 * @str: the input.
