@@ -16,10 +16,11 @@ tmpp[1] = '\0';
 char separator[11] = ". ,!(){};?\n\"";
 while (str[i] != '\0')
 {
-tmpp[0] = str[i - 1];
+tmpp[0] = str[i-1];
 if (strcspn(separator, tmpp) < 11)
 {
-str[i] = toupper(str[i]);
+if(str[i] >= 'a' && str[i] <= 'z')
+str[i] = (char)((int)str[i]-32);
 }
 i++;
 }
