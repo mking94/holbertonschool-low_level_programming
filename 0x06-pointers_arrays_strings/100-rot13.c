@@ -1,47 +1,27 @@
 #include "holberton.h"
-
 /**
-* rot13- encodes a string .
-* @str: the input.
-* Return: str after encode.
-*/
-
-char upper(char c)
+ *rot13- encode using rot13
+ *@s: pointer
+ *Return: return s
+ */
+char *rot13(char *s)
 {
-if(c >= 'a' && c<= 'z')
-c = (char)(int)c-32;
-else 
-c = c;
-return (c);
+char one[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char two[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+int i, x, y;
+for (i = 0; s[i] != '\0'; i++)
+{
+y = 0;
+for (x = 0; one[x] != '\0'; x++)
+{
+if (s[i] == one[x] && y == 0)
+{
+y = x;
+s[i] = two[y];
+y = 1;
 }
-
-char *rot13(char *str)
-{
-int i = 0;
-int length=0;
-while (str[length] != '\0')
-{
-length++;    
 }
-char tmp[length];
-while (str[i] != '\0')
-{
-tmp[i] = str[i];
-i++;
-}  
-tmp[i]='\0';
-i = 0;
-while (tmp[i] != '\0')
-{
-if(upper(tmp[i]) >= 'A' && upper(tmp[i]) <= 'Z')
-{
-if(upper(tmp[i]) >= 'N')
-tmp[i] = (char)tmp[i]-13;
-else
-tmp[i] = (char)tmp[i]+13;
+y = 0;
 }
-i++;
-}
-str = tmp;
-return str;
+return (s);
 }
