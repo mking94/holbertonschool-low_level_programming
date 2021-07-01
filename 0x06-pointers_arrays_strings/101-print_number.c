@@ -1,6 +1,5 @@
+#include "holberton.h"
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 
 /**
 * print_number: print an interger.
