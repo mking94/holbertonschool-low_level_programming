@@ -19,5 +19,6 @@ dest[x] = src[y];
 x++;
 y++;
 }
+dest[x+1]='\0';
 return (dest);
 }
