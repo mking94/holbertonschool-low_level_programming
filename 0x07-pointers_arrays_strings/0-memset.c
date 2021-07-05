@@ -8,28 +8,14 @@
 * Return: s.
 */
 
-int lengthstr(char *str)
-{
-	int i = 0; 
-	
-	while(str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	char tmp[lengthstr(s)];
+	char tmp[n];
 
-	for (i = 0; i < lengthstr(s); i++)
+	for (i = 0; i < strlen(s); i++)
 	{
-		if (i < n)
-			tmp[i] = b;
-		else
-			tmp[i] = s[i];
+		tmp[i] = b;
 	}
 	tmp[i] = '\0';
 	s = tmp;
