@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <string.h>
 
 /**
 * _memset- fills memory with a constant byte.
@@ -9,12 +8,23 @@
 * Return: s.
 */
 
+int lengthstr(char *str)
+{
+	int i = 0; 
+	
+	while(str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	char tmp[strlen(s)];
+	char tmp[lengthstr(s)];
 
-	for (i = 0; i < strlen(s); i++)
+	for (i = 0; i < lengthstr(s); i++)
 	{
 		if (i < n)
 			tmp[i] = b;
