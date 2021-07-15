@@ -1,44 +1,44 @@
 #include "holberton.h"
 #include <stdlib.h>
-
 /**
- * string_nconcat - Concatenates two strings using at
- *                  most an inputted number of bytes.
- * @s1: The first string.
- * @s2: The second string.
- * @n: The maximum number of bytes of s2 to concatenate to s1.
+ * string_nconcat - Function that concatenates two strings.
+ * @s1: String 1.
+ * @s2: String 2.
+ * @n: Bytes from s2.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - a pointer to the concatenated space in memory.
+ * Return: Pointer to the array or NULL.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat;
-	unsigned int len = n, index;
+	unsigned int i = 0, j = 0, k = 0, l = 0, m = 0, q = 0;
+	char *a;
 
 	if (s1 == NULL)
 		s1 = "";
-
 	if (s2 == NULL)
 		s2 = "";
+	while (*(s1 + i))
+		i++;
+	while (*(s2 + j))
+		j++;
 
-	for (index = 0; s1[index]; index++)
-		len++;
+	if (n >= j)
+		n = j;
 
-	concat = malloc(sizeof(char) * (len + 1));
+	a = malloc(sizeof(char) * (i + n + 1));
 
-	if (concat == NULL)
+	if (a == NULL)
 		return (NULL);
-
-	len = 0;
-
-	for (index = 0; s1[index]; index++)
-		concat[len++] = s1[index];
-
-	for (index = 0; s2[index] && index < n; index++)
-		concat[len++] = s2[index];
-
-	concat[len] = '\0';
-
-	return (concat);
+	for (k = 0; k <= i; k++)
+	{
+		*(a + k) = *(s1 + l);
+		l++;
+	}
+	for (q = 0; q < n; q++)
+	{
+		*(a + q + i) = *(s2 + m);
+		m++;
+	}
+		*(a + q + i) = '\0';
+	return (a);
 }
