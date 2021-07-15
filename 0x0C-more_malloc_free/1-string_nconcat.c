@@ -28,7 +28,7 @@ if(i < longstr(s1))
 tmp[i] = s1[i];
 }
 else {
-tmp[i] = s2[i-longstr(s1)];   
+tmp[i] = s2[i - lens2];   
 }
 }
 tmp[i] = '\0';
