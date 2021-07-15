@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - concat n bytes from s2 onto s1 in a new memory space
  * @s1: string one
