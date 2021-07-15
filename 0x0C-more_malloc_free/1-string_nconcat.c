@@ -16,9 +16,9 @@ unsigned int len = strlen(s1)+n;
 char *tmp = malloc(len);
 for (i = 0; i < len; i++)
 {
-if(i<strlen(s1))
+if (i < strlen(s1))
 {
-tmp[i] = s2[i];
+tmp[i] = s1[i];
 }
 else {
 tmp[i] = s2[i-strlen(s1)];   
