@@ -1,5 +1,5 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef _3_function_like_macro_H
+#define _3_function_like_macro_H
 
 /*
  * File: 3-function_like_macro.h
