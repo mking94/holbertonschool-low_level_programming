@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	size_t i = letters;
 
-	fptr = fopen("/home/maher/Desktop/pass/c/test.txt", "r");
+	fptr = fopen(filename, "r");
 
 	if (fptr == NULL)
 	{
