@@ -12,28 +12,23 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
-	char *buffer;
+	FILE *fptr;
 
-	if (filename == NULL)
-		return (0);
+	int i = letters;
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
+	fptr = fopen("/home/maher/Desktop/pass/c/test.txt", "r");
 
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, r);
-
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	if (fptr == NULL)
 	{
-		free(buffer);
+		printf("Error! opening file");
 		return (0);
 	}
+	while (letters != 0)
+	{
+		putchar(fgetc(fptr));
+		i--;
+	}
+	fclose(fptr);
 
-	free(buffer);
-	close(o);
-
-	return (w);
+	return (i);
 }
