@@ -1,27 +1,27 @@
-# inclure  " holberton.h "
+#include "holberton.h"
 
-/* *
- * _atoi - Convertit une chaîne en un entier.
- * @s : La chaîne à convertir.
+/**
+ * _atoi - Converts a string to an integer.
+ * @s: The string to be converted.
  *
- * Retour : La valeur entière de la chaîne convertie.
+ * Return: The integer value of the converted string.
  */
-int  _atoi ( char *s)
+int _atoi(char *s)
 {
-	signe int = 1 ;
-	 num int non signé = 0 ;
+	int sign = 1;
+	unsigned int num = 0;
 
-	faire {
-		si (*s == ' - ' )
-			signe *= - 1 ;
+	do {
+		if (*s == '-')
+			sign *= -1;
 
-		else  if (*s >= ' 0 ' && *s <= ' 9 ' )
-			num = (num * 10 ) + (*s - ' 0 ' );
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
 
-		sinon  si (num > 0 )
-			pause ;
+		else if (num > 0)
+			break;
 
-	} tandis que (*s++);
+	} while (*s++);
 
-	return (num * signe);
+	return (num * sign);
 }
