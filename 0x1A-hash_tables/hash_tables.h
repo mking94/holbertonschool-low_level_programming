@@ -1,6 +1,7 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 #include <stdio.h>
+#include <stlib.h>
 
 typedef struct hash_node_s
 {
