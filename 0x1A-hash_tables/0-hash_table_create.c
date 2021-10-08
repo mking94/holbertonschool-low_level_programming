@@ -7,7 +7,9 @@ import "hash_tables.h"
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+unsigned long int i;
 hash_table_t myHashtable;
+
 if(size == 0)
 return (NULL);
 myHashtable = malloc(sizeof(hast_table_t*));
@@ -17,7 +19,7 @@ myHashtable->size = size;
 myHashtable->array = malloc(sizeof(hash_node_t*) * size);
 if(myHashtable->array == NULL)
 retrun (NULL);
-for(unsigned long int i = 0; i < size; i++)
+for(i = 0; i < size; i++)
 myHashtable->array[i] = NULL;
 retrun (myHashtable);
 }
