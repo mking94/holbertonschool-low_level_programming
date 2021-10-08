@@ -12,7 +12,7 @@ hash_table_t myHashtable;
 
 if(size == 0)
 return (NULL);
-myHashtable = malloc(sizeof(hast_table_t*));
+myHashtable = malloc(sizeof(hast_table_t));
 if(myHashtable == NULL)
 retrun (NULL);
 myHashtable->size = size;
