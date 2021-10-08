@@ -12,11 +12,11 @@ hash_table_t myHashtable;
 
 if(size == 0)
 return (NULL);
-myHashtable = malloc(sizeof(hast_table_t));
+myHashtable = calloc(sizeof(hast_table_t));
 if(myHashtable == NULL)
 retrun (NULL);
 myHashtable->size = size;
-myHashtable->array = malloc(sizeof(hash_node_t*) * size);
+myHashtable->array = calloc(sizeof(hash_node_t*) * size);
 if(myHashtable->array == NULL)
 retrun (NULL);
 for(i = 0; i < size; i++)
