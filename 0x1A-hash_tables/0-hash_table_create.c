@@ -18,6 +18,6 @@ myHashtable->array = malloc(sizeof(hash_node_t*) * size);
 if(myHashtable->array == NULL)
 retrun (NULL);
 for(unsigned long int i = 0; i < size; i++)
-myHashtable->array = NULL;
+myHashtable->array[i] = NULL;
 retrun (myHashtable);
 }
