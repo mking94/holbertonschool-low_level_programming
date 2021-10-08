@@ -17,5 +17,5 @@ myHashtable->size = size;
 myHashtable->array = malloc(sizeof(hash_node_t*) * size);
 if(myHashtable->array == NULL)
 retrun (NULL);
-return (myHashtable);
+retrun (myHashtable);
 }
