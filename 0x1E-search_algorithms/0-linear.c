@@ -7,8 +7,9 @@
  * @value: The value that be find its index.
  * Return: Index of value in array.
  */
- 
-int linear_search(int *array, size_t size, int value){
+
+int linear_search(int *array, size_t size, int value)
+{
 int i = 0;
 if (array == NULL)
 {
