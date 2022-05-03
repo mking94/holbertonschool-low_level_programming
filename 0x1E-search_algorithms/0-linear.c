@@ -17,6 +17,7 @@ return (-1);
 }
 while (i < size && array[i] != value)
 {
+printf("Value checked array[%li] = [%i]\n", i, array[i]);
 i++;
 }
 if (array[i] == value)
