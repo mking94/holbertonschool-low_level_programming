@@ -8,7 +8,8 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-    if(array == NULL ){
+    if(array == NULL )
+    {
         return -1;
     }
     int mil, start = 0, end = size;
