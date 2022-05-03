@@ -15,10 +15,10 @@ if (array == NULL)
 return (-1);
 }
 
-int mil;
-int start = 0;
-int end = size;
-int test = 0;
+size_t mil;
+size_t start = 0;
+size_t end = size;
+size_t test = 0;
 
 while (test == 0 && start <= end)
 {
