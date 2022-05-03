@@ -18,7 +18,7 @@ return (-1);
 int mil;
 int start = 0;
 int end = size;
-int test = 0; 
+int test = 0;
 
 while (test == 0 && start <= end)
 {
