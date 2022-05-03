@@ -17,24 +17,27 @@ return (-1);
 
 size_t mil;
 size_t start = 0;
-size_t end = size;
-size_t test = 0;
+size_t end = size - 1;
 
-while (test == 0 && start <= end)
+while (start <= end)
 {
-mil = (start + end) / 2;
-if (array[mil] == value)
+mil = (end + start) / 2;
+i = start;
+printf("Searching in array: ");
+for (; i <= end; ++i)
 {
-return ((int) mil);
-}
-else if (value > array[mil])
-{
-start = mil + 1;
-}
+if (i != start)
+printf(", %d", array[i]);
 else
-{
-end = mil - 1;
+printf("%d", array[i]);
 }
+printf("\n");
+if (array[mil] < value)
+start = mil + 1;
+else if (array[mil] > value)
+end = mil - 1;
+else
+return (mil);
 }
 return (-1);
 }
