@@ -10,35 +10,35 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-if (array == NULL)
-{
-return (-1);
-}
+	size_t i = 0, low = 0, mid = 0, high = size - 1;
 
-size_t mil;
-size_t start = 0;
-size_t end = size - 1;
-size_t i = 0;
+	if (array == NULL)
+		return (-1);
 
-while (start <= end)
-{
-mil = (end + start) / 2;
-i = start;
-printf("Searching in array: ");
-for (; i <= end; ++i)
-{
-if (i != start)
-printf(", %d", array[i]);
-else
-printf("%d", array[i]);
-}
-printf("\n");
-if (array[mil] < value)
-start = mil + 1;
-else if (array[mil] > value)
-end = mil - 1;
-else
-return ((int) mil);
-}
-return (-1);
+	while (low <= high)
+	{
+		mid = (high + low) / 2;
+		i = low;
+
+		printf("Searching in array: ");
+
+		for (; i <= high; ++i)
+		{
+			if (i != low)
+				printf(", %d", array[i]);
+			else
+				printf("%d", array[i]);
+		}
+
+		printf("\n");
+
+		if (array[mid] < value)
+			low = mid + 1;
+		else if (array[mid] > value)
+			high = mid - 1;
+		else
+			return (mid);
+	}
+
+	return (-1);
 }
