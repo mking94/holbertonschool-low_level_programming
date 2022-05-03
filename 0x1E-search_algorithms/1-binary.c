@@ -15,7 +15,9 @@ if (array == NULL)
 return (-1);
 }
 
-int mil, start = 0, end = size;
+int mil;
+int start = 0;
+int end = size;
 int test = 0; 
 
 while (test == 0 && start <= end)
