@@ -18,11 +18,12 @@ return (-1);
 size_t mil;
 size_t start = 0;
 size_t end = size - 1;
+size_t i = 0;
 
 while (start <= end)
 {
 mil = (end + start) / 2;
-size_t i = start;
+i = start;
 printf("Searching in array: ");
 for (; i <= end; ++i)
 {
@@ -37,7 +38,7 @@ start = mil + 1;
 else if (array[mil] > value)
 end = mil - 1;
 else
-return (mil);
+return ((int) mil);
 }
 return (-1);
 }
