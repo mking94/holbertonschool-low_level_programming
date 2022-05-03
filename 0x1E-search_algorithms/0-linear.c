@@ -22,6 +22,7 @@ i++;
 }
 if (array[i] == value)
 {
+printf("Value checked array[%li] = [%i]\n", i, array[i]);
 return (i);
 }
 return (-1);
