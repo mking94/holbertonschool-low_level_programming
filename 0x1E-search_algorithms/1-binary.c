@@ -22,7 +22,7 @@ size_t end = size - 1;
 while (start <= end)
 {
 mil = (end + start) / 2;
-i = start;
+size_t i = start;
 printf("Searching in array: ");
 for (; i <= end; ++i)
 {
