@@ -25,7 +25,7 @@ while (test == 0 && start <= end)
 mil = (start + end) / 2;
 if (array[mil] == value)
 {
-return (mil);
+return ((int) mil);
 }
 else if (value > array[mil])
 {
